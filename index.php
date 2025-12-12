@@ -85,77 +85,11 @@ if (!isset($_GET['scr']))
 		
 <?PHP }
 	else{
-		
-//$conn= new mysqli("localhost", "root", "LauLukLulu477!", "grftools");
-$conn= new mysqli("localhost", "webfsaco_usr-hr", "M1EqZf_yN9q]8bRf", "webfsaco_grftools");
+		echo "Mostrando Datos";
 
-$conn->set_charset("utf8");
-
-
-if($conn->connect_error){
-	die('Error de Conexion '.$conn->connect_error);
-	$EstCon = 'Error';
-}else{
-	$EstCon = 'OK';
-	
-}
-	
-	$scr=$_GET['scr'];
-
-    if ($scr=="ingresar"){
-    $usuario=$_POST["usuario"];
-	$clave=$_POST["clave"];    
-    $clave=md5($clave);
-      	 
-
-			$sql=$conn->query("SELECT u.id_usuario,	u.usuario, u.nombre, u.id_acceso, a.nombre AS nombre_acceso	
-								FROM usuario u
-								INNER JOIN acceso a ON u.id_acceso = a.id_acceso
-								WHERE  usuario='$usuario' AND clave='$clave' ");
-			if ($sql->num_rows > 0) {
-    			while($row = $sql->fetch_assoc()) {
-					$_SESSION['id_usuario'] = $row["id_usuario"];
-					$_SESSION['usuario'] = $row["usuario"];
-					$_SESSION['id_acceso'] = $row["id_acceso"];
-					$_SESSION['nombre_acceso'] = $row["nombre_acceso"];
-					$_SESSION['nombre'] = $row["nombre"];
-					
-					echo $row["id_usuario"];
-					echo $row["usuario"];
-					echo $row["id_acceso"];
-					echo $row["nombre_acceso"];
-					echo $row["nombre"];
-				
-				}
-    			/* liberar el conjunto de resultados */
-    			$sql->close();
-            $conn->close();
-			echo 'Usuario Logueado Correctamente Ingresando.....';
-						
-			echo "<meta http-equiv='refresh' content='2; url=https://www.webfsa.com.ar/grftools/principal.php'>";
-				
-			exit();
-			}else{
-			$mensaje='Error al Logearse';
-			echo "<meta http-equiv='refresh' content='0; url=https://www.webfsa.com.ar/grftools/index.php?msj=error'>";
-          
-			}
-			$mensaje='<p style="color:red;">Datos Incorrectos!</p>';
-	    ?>      
-
-        <a href="index.php">Cancelar</a>
-
-    </div>
-    <!-- /.card-body -->
-  </div>
-  <!-- /.card -->
-</div>
-        
-<?PHP
-	}
     }
 	
-	?>
+?>
 		
 </body>
 </html>
