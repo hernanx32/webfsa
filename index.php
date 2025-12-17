@@ -3,8 +3,9 @@ session_start();
 $titulo='Sistema - Inicio';
 $path='';
 
-include("Modulos/html.php");
-include("Modulos/conex.php");
+include('include/cabeza.php');
+include('include/pie.php');
+//include("include/prueba.php");
 
 cabeza($titulo,$path);
 
@@ -18,22 +19,22 @@ if (isset($_GET['msj']))
 
 if (!isset($_GET['scr'])){
     
-    include("Modulos/Login/login.php");
+    include("modulos/login/login.php");
     $focus='usuario';
 }else{
     $scr=$_GET['scr'];
 
     if ($scr=="ingresar"){
-        include("Modulos/Login/ingresar.php");
+        include("modulos/login/ingresar.php");
         $focus='usuario';   
     }
     if($scr=="olvidoclave"){
-    include("Modulos/Login/olvidoclave.php");
+    include("modulos/login/olvidoclave.php");
     $focus='correo';
     }
 }
 
-echo "Estado de Conexión: ".$EstCon ;
+//echo "Estado de Conexión: ".$EstCon ;
 pieindex($focus,$path);
 
 ?>
