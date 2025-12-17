@@ -3,9 +3,9 @@ session_start();
 $titulo='Sistema - Inicio';
 $path='';
 
+include('config/conex.php');
 include('include/cabeza.php');
 include('include/pie.php');
-//include("include/prueba.php");
 
 cabeza($titulo,$path);
 
@@ -34,7 +34,7 @@ if (!isset($_GET['scr'])){
     }
 }
 
-//echo "Estado de Conexión: ".$EstCon ;
+echo "Estado de Conexión: ".$EstCon ;
 pieindex($focus,$path);
 
 ?>

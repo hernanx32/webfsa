@@ -27,24 +27,21 @@ function pieindex($focus,$path)
 function pieprincipal($focus,$path){
 ?>
 <!-- jQuery -->    
-<script src="<?PHP echo $path;?>comp/plugins/jquery/jquery.js"></script>
-<script src="<?PHP echo $path;?>comp/plugins/bootstrap/js/bootstrap.bundle.js"></script>
-<script src="<?PHP echo $path;?>comp/plugins/datatables/jquery.dataTables.js"></script>
-<script src="<?PHP echo $path;?>comp/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
-<script src="<?PHP echo $path;?>comp/plugins/datatables-responsive/js/dataTables.responsive.js"></script>
-<script src="<?PHP echo $path;?>comp/plugins/datatables-responsive/js/responsive.bootstrap4.js"></script>
-<script src="<?PHP echo $path;?>comp/plugins/datatables-buttons/js/dataTables.buttons.js"></script>
-<script src="<?PHP echo $path;?>comp/plugins/datatables-buttons/js/buttons.bootstrap4.js"></script>
-<script src="<?PHP echo $path;?>comp/plugins/jszip/jszip.js"></script>
-<script src="<?PHP echo $path;?>comp/plugins/pdfmake/pdfmake.js"></script>
-<script src="<?PHP echo $path;?>comp/plugins/pdfmake/vfs_fonts.js"></script>
-<script src="<?PHP echo $path;?>comp/plugins/datatables-buttons/js/buttons.html5.js"></script>
-<script src="<?PHP echo $path;?>comp/plugins/datatables-buttons/js/buttons.print.js"></script>
-
-<script src="<?PHP echo $path;?>comp/plugins/datatables-buttons/js/buttons.colVis.js"></script>
-
-<script src="<?PHP echo $path;?>comp/dist/js/adminlte.min.js"></script>
-
+<script src='<?PHP echo $path;?>comp/js/jquery.js'></script>
+<script src='<?PHP echo $path;?>comp/js/bootstrap.bundle.js'></script>
+<script src='<?PHP echo $path;?>comp/js/jquery.dataTables.js'></script>
+<script src='<?PHP echo $path;?>comp/js/dataTables.bootstrap4.js'></script>
+<script src='<?PHP echo $path;?>comp/js/dataTables.responsive.js'></script>
+<script src='<?PHP echo $path;?>comp/js/responsive.bootstrap4.js'></script>
+<script src='<?PHP echo $path;?>comp/js/dataTables.buttons.js'></script>
+<script src='<?PHP echo $path;?>comp/js/buttons.bootstrap4.js'></script>
+<script src='<?PHP echo $path;?>comp/js/jszip.js'></script>
+<script src='<?PHP echo $path;?>comp/js/pdfmake.js'></script>
+<script src='<?PHP echo $path;?>comp/js/vfs_fonts.js'></script>
+<script src='<?PHP echo $path;?>comp/js/buttons.html5.js'></script>
+<script src='<?PHP echo $path;?>comp/js/buttons.print.js'></script>
+<script src='<?PHP echo $path;?>comp/js/buttons.colVis.js'></script>
+<script src='<?PHP echo $path;?>comp/js/adminlte.min.js'></script>
 <script>
 
 //SCRREM BAJAR CON ENTER
