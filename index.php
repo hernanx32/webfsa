@@ -2,6 +2,8 @@
 session_start();
 $titulo='Sistema - Inicio';
 $path='';
+$focus='usuario';
+
 
 include('config/conex.php');
 include('include/cabeza.php');
