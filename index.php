@@ -7,6 +7,7 @@ include('config/conex.php');
 include('include/cabeza.php');
 include('include/pie.php');
 
+
 cabeza($titulo,$path);
 
 if (isset($_GET['msj']))

@@ -111,7 +111,7 @@ function bajarEnter (field, event) {
       Junco SAS.
         </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2023-2024 <a href="https://stiformosa.ddns.net">Sistema de Gestion</a>.</strong> Todos los derechos reservados.
+    <strong>Copyright &copy; 2023-<?PHP echo date('Y');?> <a href="https://stiformosa.ddns.net">Sistema de Gestion V2.0</a>.</strong> Todos los derechos reservados.
   </footer>
 	
 </body>
