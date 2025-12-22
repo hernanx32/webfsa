@@ -66,7 +66,19 @@ document.addEventListener('keypress', function(evt) {
 });
 	
 	
-document.getElementById("<?php echo $focus;?>").focus();
+// document.getElementById("<?php  //echo $focus;?>").focus();
+	
+//COLOCA EL PUNTERO EN EL CAMPO 
+
+document.addEventListener("DOMContentLoaded", function () {
+    <?php if (!empty($focus)) : ?>
+        var campo = document.getElementById("<?= $focus ?>");
+        if (campo) {
+            campo.focus();
+        }
+    <?php endif; ?>
+});
+
 
 /*
 function bajarEnter (field, event) {
