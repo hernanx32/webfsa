@@ -17,7 +17,6 @@ function pieindex($focus,$path)
 <script src='<?PHP echo $path;?>comp/js/buttons.print.js'></script>
 <script src='<?PHP echo $path;?>comp/js/buttons.colVis.js'></script>
 <script src='<?PHP echo $path;?>comp/js/adminlte.min.js'></script>
-
 	
 </body>
 </html>
