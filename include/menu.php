@@ -30,8 +30,8 @@ if ($nro_cat=='1'){
 		<li class="nav-item dropdown"><!-- Menu1  -->
 		<a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Archivos</a>
         <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
-            <li><a href="/micuenta.php" class="dropdown-item">Mi Cuenta</a></li>
-            <li><a href="/abmUsuario.php" class="dropdown-item">Usuarios</a></li>
+            <li><a href="micuenta.php" class="dropdown-item">Mi Cuenta</a></li>
+            <li><a href="abmUsuario.php" class="dropdown-item">Usuarios</a></li>
 			<li><a href="/abmSucursales.php" class="dropdown-item">Sucursales</a></li>
 			<li><a href="/abmProveedores.php" class="dropdown-item">Proveedores</a></li>
             <li><a href="#" class="dropdown-item">Rubros - Sub-Rubros</a></li>
