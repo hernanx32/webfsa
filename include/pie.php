@@ -71,7 +71,7 @@ document.addEventListener('keypress', function(evt) {
 
 document.addEventListener("DOMContentLoaded", function () {
     <?php if (!empty($focus)) : ?>
-        var campo = document.getElementById("<?= $focus ?>");
+        var campo = document.getElementById("<?PHP echo $focus; ?>");
         if (campo) {
             campo.focus();
         }

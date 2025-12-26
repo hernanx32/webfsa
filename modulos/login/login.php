@@ -28,7 +28,7 @@
   <div class="row">
           <!-- /.col -->
     <div class="col-5">
-    <a href="index.php?scr=olvidoclave">¿Olvido Su Clave?</a>
+    <!-- <a href="index.php?scr=olvidoclave">¿Olvido Su Clave?</a>-->
    </div>         
     <div class="col-7">
     <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
