@@ -5,7 +5,7 @@ $id_us=$_SESSION['id_usuario'];
 $usuario=$_SESSION['usuario'];
 $nro_cat=$_SESSION['id_acceso'];
 $nom_completo=$_SESSION['nombre'];
-
+$nombre_acceso=$_SESSION['nombre_acceso'];
 
 $titulo='Sistema - Principal';
 $path='';
@@ -19,8 +19,8 @@ include($path."config/conex.php");
 
 
 cabeza($titulo,$path);
-menu($nro_cat, $nom_completo);
-echo $nro_cat;	
+menu($nro_cat, $nom_completo, $nombre_acceso);
+
 
 echo "Pag. Principal en Construcción.";
 

@@ -10,20 +10,31 @@
     $usuario=$_POST["usuario"];
 	$clave=$_POST["clave"];    
     $clave=md5($clave);
-      	 
 
-			$sql=$conn->query("SELECT * FROM `usuario` WHERE usuario='$usuario' AND clave='$clave' ");
+			
+	
+			$sql=$conn->query("SELECT u.id_usuario,	u.usuario, u.nombre, u.id_acceso, a.nombre AS nombre_acceso	
+								FROM usuario u
+								INNER JOIN acceso a ON u.id_acceso = a.id_acceso
+								WHERE  usuario='$usuario' AND clave='$clave' ");
 			if ($sql->num_rows > 0) {
     			while($row = $sql->fetch_assoc()) {
 					$_SESSION['id_usuario'] = $row["id_usuario"];
 					$_SESSION['usuario'] = $row["usuario"];
 					$_SESSION['id_acceso'] = $row["id_acceso"];
+					$_SESSION['nombre_acceso'] = $row["nombre_acceso"];
 					$_SESSION['nombre'] = $row["nombre"];
-					}
+					
+					echo "Tipo de Acceso:".$row["nombre_acceso"]."</br>";
+					echo "Bienvenido Usuario:".$row["nombre"];
+				
+				}
     			/* liberar el conjunto de resultados */
     			$sql->close();
             $conn->close();
-			header("location:principal.php");
+			echo 'Usuario Logueado Correctamente Ingresando.....';
+	
+			header("Refresh: 3; URL=principal.php");
 			exit();
 			}else{
 			$mensaje='Error al Logearse';

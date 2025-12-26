@@ -1,6 +1,6 @@
 <?PHP
 
-function menu($nro_cat, $nom_completo)
+function menu($nro_cat, $nom_completo, $nombre_acceso)
 {
  
    if (!isset($_SESSION['id_usuario'])) {
@@ -15,7 +15,7 @@ if ($nro_cat=='1'){
 <!-- Navbar -->
   <nav class="navbar-expand-md navbar-light navbar" >
     <div class="container-fluid">
-      <a href="/sisfage/principal.php" class="navbar-brand">
+      <a href="principal.php" class="navbar-brand">
       <h5><img src="img/LOGO.png" width="30" height="30" alt="<?PHP echo $nom_completo; ?>" class="brand-image img-circle elevation-3" style="opacity:0.8">
       <span class="brand-text font-light"><?PHP echo $nom_completo; ?></span> </h5>
       </a>
@@ -31,11 +31,11 @@ if ($nro_cat=='1'){
 		<a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Archivos</a>
         <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
             <li><a href="micuenta.php" class="dropdown-item">Mi Cuenta</a></li>
-            <li><a href="abmUsuario.php" class="dropdown-item">Usuarios</a></li>
-			<li><a href="/abmSucursales.php" class="dropdown-item">Sucursales</a></li>
-			<li><a href="/abmProveedores.php" class="dropdown-item">Proveedores</a></li>
+            <li><a href="abm_usuario.php" class="dropdown-item">Usuarios</a></li>
+			<li><a href="abm_sucursales.php" class="dropdown-item">Sucursales</a></li>
+			<li><a href="abm_proveedores.php" class="dropdown-item">Proveedores</a></li>
             <li><a href="#" class="dropdown-item">Rubros - Sub-Rubros</a></li>
-			<li><a href="/prueba.php" class="dropdown-item">Opciones del Sistema</a></li>
+			<li><a href="prueba.php" class="dropdown-item">Opciones del Sistema</a></li>
 			<li class="dropdown-divider"></li>
 			<li><a href="modulos/login/salir.php" class="dropdown-item">Salir</a></li>
 		</ul>
@@ -84,7 +84,7 @@ if ($nro_cat=='1'){
     </div>
 
       </ul>
-    </div>Categoria:<?PHP echo $nro_cat."<br>"; echo date('d\/m\/Y'); ?>
+    </div>Cat:<?PHP echo $nombre_acceso."<br>"; echo date('d\/m\/Y'); ?>
   </nav>
 <?PHP   
 
