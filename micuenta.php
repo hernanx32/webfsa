@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$fecha=$fecha_form;
+
 $id_us=$_SESSION['id_usuario'];
 $usuario=$_SESSION['usuario'];
 $nro_cat=$_SESSION['id_acceso'];
@@ -17,6 +17,7 @@ include($path."include/cabeza.php");
 include($path."include/menu.php");
 include($path."include/pie.php");
 include($path."config/conex.php");
+
 
 
 cabeza($titulo,$path);

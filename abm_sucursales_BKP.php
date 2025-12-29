@@ -18,7 +18,10 @@ include($path."config/conex.php");
 include($path."modulos/sucursal/abm_sucursal.php");
 
 cabeza($titulo,$path);
-menu($nro_cat, $nom_completo,$nombre_acceso,$path);
+menu($nro_cat, $nom_completo, $nombre_acceso);
+
+$fecha=$fecha_form;
+
 
 //Validamos si existe la Var SCR
 if (isset($_GET['scr'])){
