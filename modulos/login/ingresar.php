@@ -25,8 +25,8 @@
 					$_SESSION['nombre_acceso'] = $row["nombre_acceso"];
 					$_SESSION['nombre'] = $row["nombre"];
 					
-					echo "Tipo de Acceso:".$row["nombre_acceso"]."</br>";
-					echo "Bienvenido Usuario:".$row["nombre"];
+					echo "Tipo de Acceso:<strong>".$row["nombre_acceso"]."</strong></br>";
+					echo "Bienvenido Usuario:<strong>".$row["nombre"]."</strong></br>";
 				
 				}
     			/* liberar el conjunto de resultados */
