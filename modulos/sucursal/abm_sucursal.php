@@ -12,22 +12,29 @@ function abmSuc($conn)
             }
         }
     </script>
-<form>
-<table width="750" border="1" align="center">
-  <tbody>
-    <tr>
-      <th colspan="4" scope="col">
-        <label>ABM Sucursales</label>
-       </th>
-      <th colspan="2" align="center" scope="col"><div align="center"><a href="abm_sucursales.php?scr=agregar">AGREGAR SUCURSALES</a></div></th>
-      </tr>
-    <tr align="center" bgcolor="#8E9EFD">
-      <td width="40">ID</td>
-      <td width="103">Nro Suc</td>
-      <td width="184">Nombre</td>
-      <td width="191">Domicilio</td>
-      <td width="150">Acciones</td>
-    </tr>
+<form action="abm_sucursal.php?scr=buscar">
+
+<div class="card">
+  <!-- Encabezado: título a la izquierda y botón a la derecha -->
+  <div class="card-header d-flex  justify-content-between align-items-center">
+    <h3 class="card-title mb-0 font-weight-bold">ABM Sucursales</h3>
+	<a href="abm_sucursal.php?scr=agregar" class="btn btn-primary ml-auto p-2">
+      <i class="fas fa-user-plus"> Agregar Sucursal</i>
+    </a>
+  </div>
+</div>	
+
+  <div class="card-body">
+    <table id="tablaUsuarios" class="table table-bordered table-hover table-striped">
+      <thead class="bg-primary text-white text-center">
+        <tr>
+          <th>ID</th>
+          <th>Nro Suc</th>
+          <th>Nombre</th>
+          <th>Domicilio</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
       
 <?PHP  
 $sql = "SELECT * from Sucursales where estado = '1'";
@@ -221,18 +228,8 @@ function form_modi_suc($conn, $id ){
       
       
       
-      
-      
-      
-      
-      
-      
-      
-      
 <?PHP
-
 }
-
 //FUNCION DE MODIFICAR USUARIO
 function modificando($conn, $consulta){
 	$sql = $consulta;
@@ -249,6 +246,5 @@ function modificando($conn, $consulta){
 	}
 
 }
-
 
 ?>
