@@ -37,8 +37,6 @@
         <option value="">Seleccione Localidad</option>
     </select>
 
-    <input type="text" id="nueva_localidad" name="nueva_localidad" placeholder="Nueva localidad" required>
-    <button type="submit">Guardar</button>
 </form>
 
 <hr>
