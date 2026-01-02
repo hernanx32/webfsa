@@ -25,13 +25,9 @@ if (isset($_GET['scr'])){
 	$scr=$_GET['scr'];
     
 	if ($scr=="agregar"){
-        agregar($conn);   
+		agregar_suc($conn);   
         }
-    elseif($scr=="eliminar"){
-		$id_el_us=$_GET['id'];
-    	elimina_usu($conn, $id_el_us);
-    }
-    elseif($scr=="agregarnuevo"){
+     elseif($scr=="agregarnuevo"){
         //CARGAMOS LOS DATOS DEL POST
         $Dato2=$_POST['nro_suc'];
         $Dato3=$_POST['nomb_suc'];

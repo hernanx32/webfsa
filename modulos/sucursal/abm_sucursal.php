@@ -18,7 +18,7 @@ function abmSuc($conn)
   <!-- Encabezado: título a la izquierda y botón a la derecha -->
   <div class="card-header d-flex  justify-content-between align-items-center">
     <h3 class="card-title mb-0 font-weight-bold">ABM Sucursales</h3>
-	<a href="abm_sucursal.php?scr=agregar" class="btn btn-primary ml-auto p-2">
+	<a href="abm_sucursales.php?scr=agregar" class="btn btn-primary ml-auto p-2">
       <i class="fas fa-user-plus"> Agregar Sucursal</i>
     </a>
   </div>
@@ -54,7 +54,8 @@ if ($result->num_rows > 0) {
         echo "</td><td>";
         echo $row['domicilio'];
         echo "</td><td align='center'>";
-        echo "<a href='abm_sucursales.php?scr=modificar&id=".$row['id_sucursal']."'>Modificar</a> </td></tr>"; 
+        //echo "<a href='abm_sucursales.php?scr=modificar&id=".$row['id_sucursal']."'>Modificar</a> </td></tr>"; 
+		echo "<a class='btn btn-md btn-warning' href='abm_sucursales.php?scr=modificar&id=".$row['id_sucursal']."'><i class='fas fa-edit'></i></a></td></tr>"; 
     
     }
 } else {
@@ -64,7 +65,7 @@ echo "</tbody></table></form>";
 
 } 
 //AGREGAR FORMULARIO PARA AGREGAR USUARIO	  
-function agregar($conn){
+function agregar_suc($conn){
 ?>
     
     <form action="abm_sucursales.php?scr=agregarnuevo" method="post" name="form1" id="form1">
@@ -75,7 +76,7 @@ function agregar($conn){
       </tr>
       <tr>
         <td width="135"><label for="id_suc">Id. Suc:</label></td>
-        <td width="356"><input name="id_suc" type="text" id="id_suc" size="5" maxlength="5" readonly="readonly"></td>
+        <td width="356"><input name="id_suc" type="text" disabled="disabled" id="id_suc" size="5" maxlength="5" readonly="readonly"></td>
       </tr>
       <tr>
         <td><label for="nro_suc">Nro Suc:</label></td>
