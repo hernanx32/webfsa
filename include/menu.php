@@ -34,7 +34,7 @@ if ($nro_cat=='1'){
             <li><a href="abm_usuario.php" class="dropdown-item">Usuarios</a></li>
 			<li><a href="abm_sucursales.php" class="dropdown-item">Sucursales</a></li>
 			<li><a href="abm_proveedores.php" class="dropdown-item">Proveedores</a></li>
-            <li><a href="#" class="dropdown-item">Rubros - Sub-Rubros</a></li>
+            <li><a href="abm_rubros.php" class="dropdown-item">Rubros - Sub-Rubros</a></li>
 			<li><a href="prueba.php" class="dropdown-item">Opciones del Sistema</a></li>
 			<li class="dropdown-divider"></li>
 			<li><a href="modulos/login/salir.php" class="dropdown-item">Salir</a></li>

@@ -13,7 +13,7 @@
           <input name="usuario" type="text" required="required" class="form-control" id="usuario" placeholder="Usuario" onkeypress="return bajarEnter(this, event)" size="20" maxlength="20">
           <div class="input-group-append">
             <div class="input-group-text">
-              <span class="fas fa-user"></span>
+				<span class="fa fa-user"></span>
             </div>
           </div>
         </div>
@@ -21,7 +21,7 @@
           <input name="clave" type="password" required="required" class="form-control" id="clave" placeholder="Contraseña" size="20" maxlength="20">
           <div class="input-group-append">
             <div class="input-group-text">
-              <span class="fas fa-lock"></span>
+              <span class="fa fa-lock"></span>
             </div>
           </div>
         </div>

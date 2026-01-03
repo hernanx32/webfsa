@@ -4,9 +4,8 @@
 <meta charset="UTF-8">
 <title>Provincias y Localidades</title>
 <?PHP 
-
-	include("config.php");
-	?>
+include("config.php");
+?>
 <link rel="stylesheet"
  href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
 

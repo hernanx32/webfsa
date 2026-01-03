@@ -19,7 +19,7 @@ function abmSuc($conn)
   <div class="card-header d-flex  justify-content-between align-items-center">
     <h3 class="card-title mb-0 font-weight-bold">ABM Sucursales</h3>
 	<a href="abm_sucursales.php?scr=agregar" class="btn btn-primary ml-auto p-2">
-      <i class="fas fa-user-plus"> Agregar Sucursal</i>
+      <i class='fa fa-plus-circle'> Agregar Sucursal</i>
     </a>
   </div>
 </div>	
@@ -55,7 +55,7 @@ if ($result->num_rows > 0) {
         echo $row['domicilio'];
         echo "</td><td align='center'>";
         //echo "<a href='abm_sucursales.php?scr=modificar&id=".$row['id_sucursal']."'>Modificar</a> </td></tr>"; 
-		echo "<a class='btn btn-md btn-warning' href='abm_sucursales.php?scr=modificar&id=".$row['id_sucursal']."'><i class='fas fa-edit'></i></a></td></tr>"; 
+		echo "<a class='btn btn-md btn-warning' href='abm_sucursales.php?scr=modificar&id=".$row['id_sucursal']."'><i class='fa fa-edit'></i></a></td></tr>"; 
     
     }
 } else {

@@ -21,7 +21,7 @@ function abmUsuario($conn)
   <div class="card-header d-flex  justify-content-between align-items-center">
     <h3 class="card-title mb-0 font-weight-bold">ABM Usuarios</h3>
 	<a href="abm_usuario.php?scr=agregar" class="btn btn-primary ml-auto p-2">
-      <i class="fas fa-user-plus"> Agregar Usuario</i>
+      <i class="fa fa-user-plus"> Agregar Usuario</i>
     </a>
   </div>
 </div>	
@@ -71,8 +71,8 @@ if ($result->num_rows > 0) {
         echo "</td><td>";
         echo $row['acc_nombre'];
         echo "</td><td align='center'>";
-        echo "<a class='btn btn-md btn-warning' href='abm_usuario.php?scr=modificar&id=".$row['id_usuario']."'><i class='fas fa-edit'></i></a> - 
-			  <a class='btn btn-md btn-danger' href='abm_usuario.php?scr=eliminar&id=".$row['id_usuario']."' onclick='confirmarEnlace(event)'><i class='fas fa-trash-alt'></i></a> </td></tr>"; 
+        echo "<a class='btn btn-md btn-warning' href='abm_usuario.php?scr=modificar&id=".$row['id_usuario']."'><i class='fa fa-edit'></i></a> - 
+			  <a class='btn btn-md btn-danger' href='abm_usuario.php?scr=eliminar&id=".$row['id_usuario']."' onclick='confirmarEnlace(event)'><i class='fa fa-trash'></i></a> </td></tr>"; 
     
     }
 } else {
@@ -176,10 +176,10 @@ function agregar($conn){
 
   <div class="text-center mt-4">
     <a href="abm_usuario.php" class="btn btn-outline-secondary mr-2">
-      <i class="fas fa-times"></i> Cancelar
+      <i class="fa fa-times"></i> Cancelar
     </a>
     <button type="submit" class="btn btn-outline-success">
-      <i class="fas fa-check"></i> Agregar
+      <i class="fa fa-check"></i> Agregar
     </button>
   </div>
 </form>

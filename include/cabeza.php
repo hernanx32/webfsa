@@ -11,13 +11,14 @@ global $fecha_form;
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   	
-	<title><?php echo $titulopag; ?></title>
+	<title>Sistema de Gestion - <?php echo $titulopag; ?></title>
 
 	
 	
 	<link rel='stylesheet' href='<?PHP echo $path;?>comp/css/google.css'>
 	<link rel='stylesheet' href='<?PHP echo $path;?>comp/css/adminlte.min.css'>
-	<link rel='stylesheet' href='<?PHP echo $path;?>comp/css/fontawesome-free-all.min.css'>
+	<!--<link rel='stylesheet' href='<?PHP echo $path;?>comp/css/fontawesome-free-all.min.css'>-->
+	<link rel="stylesheet" href='comp/css/font-awesome.min.css'>
 	<link rel='stylesheet' href='<?PHP echo $path;?>comp/css/dataTables.bootstrap4.min.css'>
 	<link rel='stylesheet' href='<?PHP echo $path;?>comp/css/select2.min.css'>
 	<link rel='stylesheet' href='<?PHP echo $path;?>comp/css/buttons.bootstrap4.css'>

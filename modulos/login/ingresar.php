@@ -34,7 +34,7 @@
             $conn->close();
 			echo 'Usuario Logueado Correctamente Ingresando.....';
 	
-			header("Refresh: 3; URL=principal.php");
+			header("Refresh: 1; URL=principal.php");
 			exit();
 			}else{
 			$mensaje='Error al Logearse';
